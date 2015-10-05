@@ -20,10 +20,10 @@
   width: 400px;
   height: 120px;
   border: 10px solid #323232;
-  /*border-width: medium;*/
+  border-width: medium;
+  /*border-radius: 10%;*/
   margin-left: 37%;
   margin-right: 37%;
-  /*margin: auto;*/
   margin-top: 60px;
   padding: 10px;
   position: absolute;
@@ -115,47 +115,6 @@ ul {
 	display: block ;
 }
 
-.home-nav-list a {
-  text-align: center;
-  color: #323232;
-  font-size: 100%;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.home-nav-list a:hover {
-  color: #6184E0;
-}
-
-nav {
-	position: fixed;
-  background: transparent;
-  z-index: 1;
-}
-
-.main-menu a, .main-menu a:hover {
-	color: #323232;
-}
-
-.main-menu a:after {
-	content: attr(data-hover);
-	position: fixed;
-	margin-left: 5px;
-}
-
-.main-menu a:before {
-	content: '';
-	position: fixed;
-}
-
-.main-menu a:before, .main-menu a:after {opacity: 0; visibility: hidden; position: fixed;}
-
-.main-menu a:hover::before, .main-menu a:hover::after {opacity: 1; visibility: visible; position: fixed;}
-
-.main-menu, .fa {
-  background: transparent;
-}
-
 .about-wrapper {
 	display: block;
 	margin-right: 18%;
@@ -169,10 +128,11 @@ nav {
 }
 
 .torie-photo {
-	/*border-radius: 50%;*/
 	width: 300px;
 	float: left;
 	display: table-cell;
-	border: 1px solid gray;
-	/*border-radius: 50%;*/
+}
+
+.page-navigation {
+  bottom: 35px;
 }
