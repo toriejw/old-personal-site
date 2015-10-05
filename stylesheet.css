@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Dysfunctional";
+  src: url("../fonts/Dysfunctional.otf");
+}
+
+@font-face {
+	font-family: "Ogirema";
+	src: url("../fonts/ogirema/Ogirema.ttf");
+}
+
+* {
+	font-family: Dysfunctional;
+	color: #323232;
+}
+
+.title-home {
+  background: #EDEDED;
+  color: #323232;
+  text-align: center;
+  width: 400px;
+  height: 120px;
+  border-radius: 10px;
+  border-color: #323232;
+  border-style: solid;
+  border-width: medium;
+  /*margin-left: 37%;
+  margin-right: 37%;*/
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px;
+  position: absolute;
+}
+
+.bg-image {
+  background: transparent;
+  bottom: 15px;
+  right: 0px;
+  position: absolute;
+}
+
+h2, h3, p {
+	text-align: center;
+  background: transparent;
+}
+
+h1 {
+	font-size: 200%;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.page {
+	height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* .about, .nonprofits {
+  background: white;
+}
+
+.home, .projects, .contact {
+  background: #D7EFEF
+} */
+
+.home {
+  background-image: url('/images/bg-image-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+h2 {
+	padding-top: 60px;
+	margin-bottom: 5%;
+	font-size: 200%;
+}
+
+p {
+	margin: 10% 10% 0 10%;
+	font-size: 107%;
+  background: transparent;
+}
+
+.p-two {
+	margin-top: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #7B30C5;
+  background: transparent;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #752275;
+}
+
+div {
+	position: center;
+	text-align: center;
+}
+
+.social_links {
+	display: inline-block;
+	position: center;
+	margin-top: 15px;
+  margin-bottom: 15px;
+	color: #323232;
+}
+
+.social_links:hover {
+	color: #6184E0;
+}
+
+ul {
+	list-style-type: none;
+	display: block ;
+}
+
+.home-nav-list a {
+  text-align: center;
+  color: #323232;
+  font-size: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.home-nav-list a:hover {
+  color: #6184E0;
+}
+
+nav {
+	position: fixed;
+  background: transparent;
+  z-index: 1;
+}
+
+.main-menu a, .main-menu a:hover {
+	color: #323232;
+}
+
+.main-menu a:after {
+	content: attr(data-hover);
+	position: fixed;
+	margin-left: 5px;
+}
+
+.main-menu a:before {
+	content: '';
+	position: fixed;
+}
+
+.main-menu a:before, .main-menu a:after {opacity: 0; visibility: hidden; position: fixed;}
+
+.main-menu a:hover::before, .main-menu a:hover::after {opacity: 1; visibility: visible; position: fixed;}
+
+.main-menu, .fa {
+  background: transparent;
+}
+
+.about-wrapper {
+	display: block;
+	margin-right: 18%;
+	margin-left: 18%;
+}
+
+.about-wrapper p {
+	display: table-cell;
+	padding: 50px 0px 10px 30px;
+	text-align: left;
+}
+
+.torie-photo {
+	border-radius: 50%;
+	width: 300px; height: 300px;
+	float: left;
+	display: table-cell;
+	border: 1px solid gray;
+	border-radius: 50%;
+}
+
+.nonprofits-p {
+	margin: 10% 17% 0 17%;
+}
