@@ -8,6 +8,39 @@
 	color: #323232;
 }
 
+nav {
+	position: fixed;
+  background: transparent;
+  z-index: 1;
+}
+
+.main-menu a:before {
+	content: '';
+	position: fixed;
+}
+
+.main-menu a:after {
+	content: attr(data-hover);
+	position: fixed;
+	margin-left: 5px;
+}
+
+.main-menu a:before, .main-menu a:after {opacity: 0; visibility: hidden; position: fixed;}
+
+.main-menu a:hover::before, .main-menu a:hover::after {opacity: 1; visibility: visible; position: fixed;}
+
+.main-menu {
+  margin-top: 30px;
+}
+
+.main-menu li {
+  margin-top: 4px;
+}
+
+.main-menu, .fa {
+  background: transparent;
+}
+
 .title-home {
   color: #323232;
   text-align: center;
@@ -19,13 +52,21 @@
   position: absolute;
 }
 
-h1 a, h1 a:hover {
+h1 a, h1 a:hover, .home-nav-list a, .social_links, .main-menu a, .main-menu a:hover {
   color: #323232;
+}
+
+a {
+	color: #7B30C5;
+  background: transparent;
+}
+
+a:hover, .social_links:hover {
+	color: #6184E0;
 }
 
 .home-nav-list a {
   text-align: center;
-  color: #323232;
   font-size: 150%;
   margin-top: 50px;
   margin-bottom: 15px;
@@ -60,7 +101,6 @@ h2 {
 p {
 	margin: 10% 10% 0 10%;
 	font-size: 107%;
-  background: transparent;
 }
 
 .page {
@@ -73,15 +113,8 @@ p {
 	margin-top: 5px;
 }
 
-a {
-	text-decoration: none;
-	color: #7B30C5;
-  background: transparent;
-}
-
-a:hover {
-	text-decoration: none;
-	color: #6184E0;
+a, a:hover {
+  text-decoration: none;
 }
 
 div {
@@ -94,11 +127,6 @@ div {
 	position: center;
 	margin-top: 15px;
   margin-bottom: 15px;
-	color: #323232;
-}
-
-.social_links:hover {
-	color: #6184E0;
 }
 
 ul {
@@ -123,41 +151,4 @@ ul {
 	float: left;
 	display: table-cell;
   border-color: white;
-}
-
-nav {
-	position: fixed;
-  background: transparent;
-  z-index: 1;
-}
-
-.main-menu a, .main-menu a:hover {
-	color: #323232;
-}
-
-.main-menu a:before {
-	content: '';
-	position: fixed;
-}
-
-.main-menu a:after {
-	content: attr(data-hover);
-	position: fixed;
-	margin-left: 5px;
-}
-
-.main-menu a:before, .main-menu a:after {opacity: 0; visibility: hidden; position: fixed;}
-
-.main-menu a:hover::before, .main-menu a:hover::after {opacity: 1; visibility: visible; position: fixed;}
-
-.main-menu {
-  margin-top: 30px;
-}
-
-.main-menu li {
-  margin-top: 4px;
-}
-
-.main-menu, .fa {
-  background: transparent;
 }
